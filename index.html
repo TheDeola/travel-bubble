@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fly Tropez</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Fly Tropez</h2>
+        <div class="toggle"></div>
+      </header>
+      <!-- <video src="explore.mp4" muted loop autoplay></video> -->
+      
+      <div class="overlay">
+        <div class="bubbles">
+          <img src="./images/bubble.png" alt="bubble">
+          <img src="./images/bubble.png" alt="bubble">
+          <img src="./images/bubble.png" alt="bubble">
+          <img src="./images/bubble.png" alt="bubble">
+          <img src="./images/bubble.png" alt="bubble">
+          <img src="./images/bubble.png" alt="bubble">
+          <img src="./images/bubble.png" alt="bubble">
+        </div>
+      </div>
+
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Exploring The World</h3>
+        <p>
+          Our mission is to redefine travel by imparting real-time travel advice
+          and enabling aspiring and experienced travelers to build and expand
+          their travel portfolios.
+        </p>
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/icon-instagram.svg" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/icon-youtube.svg" alt="Youtube" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
